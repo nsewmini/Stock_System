@@ -140,7 +140,7 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
             }
         }
 
-       
-      
+
+
     }
 }

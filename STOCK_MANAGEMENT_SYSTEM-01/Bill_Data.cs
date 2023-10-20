@@ -24,7 +24,7 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
         private void button3_Click(object sender, EventArgs e)
         {
             Transactions transPage = new Transactions();
-           transPage.Show();
+            transPage.Show();
             this.Hide();
         }
 
@@ -45,7 +45,7 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
         {
             // Implement code to add bill data to the database
             // Retrieve data from the form's UI elements (e.g., textboxes)
-            
+
 
             int customerID = int.Parse(textBox1.Text);
             int billID = int.Parse(textBox3.Text);
@@ -71,7 +71,7 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
 
                 MessageBox.Show("Bill data added successfully!");
                 // Clear the input fields after insertion
-               textBox2.Text = "";
+                textBox2.Text = "";
                 textBox3.Text = "";
                 dateTimePicker1.Text = "";
                 textBox2.Text = "";
@@ -110,9 +110,19 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
                 MessageBox.Show("An error occurred: " + ex.Message);
             }
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
 
 
-    
+

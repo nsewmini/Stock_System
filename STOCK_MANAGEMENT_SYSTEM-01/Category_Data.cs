@@ -110,7 +110,7 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
         private void button4_Click(object sender, EventArgs e)
         {
 
-           Products_data productdataPage = new Products_data();
+            Products_data productdataPage = new Products_data();
             productdataPage.Show();
             this.Hide();
         }

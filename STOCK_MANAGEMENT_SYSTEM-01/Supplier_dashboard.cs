@@ -81,6 +81,9 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
             }
         }
 
-     
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

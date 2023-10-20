@@ -172,6 +172,9 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
             }
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

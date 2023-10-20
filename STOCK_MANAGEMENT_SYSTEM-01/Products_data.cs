@@ -154,8 +154,23 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
         private void button4_Click(object sender, EventArgs e)
         {
             Supplier_dashboard supplierPage = new Supplier_dashboard();
-           supplierPage.Show();
+            supplierPage.Show();
             this.Hide();
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Products_data_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

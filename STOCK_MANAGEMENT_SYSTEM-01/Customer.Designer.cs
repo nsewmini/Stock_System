@@ -43,12 +43,15 @@
             dataGridView1 = new DataGridView();
             button3 = new Button();
             label7 = new Label();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.FromArgb(255, 192, 128);
             label2.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label2.Location = new Point(9, 215);
             label2.Name = "label2";
@@ -59,6 +62,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.FromArgb(255, 192, 128);
             label3.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label3.Location = new Point(12, 274);
             label3.Name = "label3";
@@ -70,6 +74,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = Color.FromArgb(255, 192, 128);
             label4.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label4.Location = new Point(12, 338);
             label4.Name = "label4";
@@ -80,6 +85,7 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.BackColor = Color.FromArgb(255, 192, 128);
             label5.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label5.Location = new Point(12, 401);
             label5.Name = "label5";
@@ -130,6 +136,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.FromArgb(255, 192, 128);
             label1.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label1.Location = new Point(9, 159);
             label1.Name = "label1";
@@ -158,13 +165,13 @@
             // 
             // dataGridView1
             // 
-            dataGridView1.BackgroundColor = Color.Bisque;
+            dataGridView1.BackgroundColor = Color.BlanchedAlmond;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(371, 131);
+            dataGridView1.Location = new Point(372, 103);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(607, 437);
+            dataGridView1.Size = new Size(606, 465);
             dataGridView1.TabIndex = 14;
             // 
             // button3
@@ -182,13 +189,23 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Font = new Font("Cambria", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Font = new Font("Cambria", 24F, FontStyle.Bold, GraphicsUnit.Point);
             label7.ForeColor = Color.Firebrick;
-            label7.Location = new Point(413, 34);
+            label7.Location = new Point(372, 23);
             label7.Name = "label7";
-            label7.Size = new Size(168, 36);
+            label7.Size = new Size(227, 47);
             label7.TabIndex = 17;
             label7.Text = "CUSTOMER";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources._101;
+            pictureBox1.Location = new Point(-81, -57);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1092, 654);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 18;
+            pictureBox1.TabStop = false;
             // 
             // Customer
             // 
@@ -211,9 +228,11 @@
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
+            Controls.Add(pictureBox1);
             Name = "Customer";
             Text = "Customer";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -234,5 +253,6 @@
         private DataGridView dataGridView1;
         private Button button3;
         private Label label7;
+        private PictureBox pictureBox1;
     }
 }

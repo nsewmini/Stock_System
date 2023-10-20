@@ -32,32 +32,37 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
             DisplayProductData();
         }
 
-            private void DisplayProductData()
+        private void DisplayProductData()
+        {
+            try
             {
-                try
+                using (SqlConnection connection = new SqlConnection(ConnectionString))
                 {
-                    using (SqlConnection connection = new SqlConnection(ConnectionString))
+                    connection.Open();
+                    string selectQuery = "SELECT * FROM PRODUCTS";
+
+                    using (SqlCommand cmd = new SqlCommand(selectQuery, connection))
                     {
-                        connection.Open();
-                        string selectQuery = "SELECT * FROM PRODUCTS";
-
-                        using (SqlCommand cmd = new SqlCommand(selectQuery, connection))
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
                         {
-                            using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
-                            {
-                                DataTable dataTable = new DataTable();
-                                adapter.Fill(dataTable);
+                            DataTable dataTable = new DataTable();
+                            adapter.Fill(dataTable);
 
-                                // Bind the DataTable to a new DataGridView (e.g., dataGridView2)
-                                dataGridView1.DataSource = dataTable;
-                            }
+                            // Bind the DataTable to a new DataGridView (e.g., dataGridView2)
+                            dataGridView1.DataSource = dataTable;
                         }
                     }
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("An error occurred: " + ex.Message);
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message);
             }
         }
+
+        private void View_Products_Load(object sender, EventArgs e)
+        {
+
+        }
     }
+}

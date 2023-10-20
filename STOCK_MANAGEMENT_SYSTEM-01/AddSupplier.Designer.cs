@@ -45,12 +45,17 @@
             dataGridView1 = new DataGridView();
             label7 = new Label();
             button3 = new Button();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.FromArgb(255, 192, 128);
             label1.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label1.Location = new Point(21, 128);
             label1.Name = "label1";
@@ -61,6 +66,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.FromArgb(255, 192, 128);
             label2.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label2.Location = new Point(20, 182);
             label2.Name = "label2";
@@ -72,6 +78,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.FromArgb(255, 192, 128);
             label3.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label3.Location = new Point(21, 226);
             label3.Name = "label3";
@@ -82,6 +89,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = Color.FromArgb(255, 192, 128);
             label4.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label4.Location = new Point(21, 271);
             label4.Name = "label4";
@@ -92,6 +100,7 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.BackColor = Color.FromArgb(255, 192, 128);
             label5.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label5.Location = new Point(21, 318);
             label5.Name = "label5";
@@ -103,6 +112,7 @@
             // label6
             // 
             label6.AutoSize = true;
+            label6.BackColor = Color.FromArgb(255, 192, 128);
             label6.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label6.Location = new Point(21, 365);
             label6.Name = "label6";
@@ -160,11 +170,11 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.LightSalmon;
+            button1.BackColor = Color.Tomato;
             button1.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button1.Location = new Point(12, 443);
             button1.Name = "button1";
-            button1.Size = new Size(121, 40);
+            button1.Size = new Size(145, 50);
             button1.TabIndex = 12;
             button1.Text = "View";
             button1.UseVisualStyleBackColor = false;
@@ -172,11 +182,11 @@
             // 
             // button2
             // 
-            button2.BackColor = Color.LightSalmon;
+            button2.BackColor = Color.Tomato;
             button2.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.Location = new Point(188, 443);
+            button2.Location = new Point(172, 443);
             button2.Name = "button2";
-            button2.Size = new Size(124, 40);
+            button2.Size = new Size(151, 50);
             button2.TabIndex = 13;
             button2.Text = "Add new";
             button2.UseVisualStyleBackColor = false;
@@ -186,28 +196,28 @@
             // 
             dataGridView1.BackgroundColor = Color.Bisque;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(367, 88);
+            dataGridView1.Location = new Point(355, 115);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(614, 468);
+            dataGridView1.Size = new Size(635, 462);
             dataGridView1.TabIndex = 14;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Font = new Font("Cambria", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Font = new Font("Cambria", 24F, FontStyle.Bold, GraphicsUnit.Point);
             label7.ForeColor = Color.Firebrick;
-            label7.Location = new Point(367, 24);
+            label7.Location = new Point(280, 23);
             label7.Name = "label7";
-            label7.Size = new Size(357, 36);
+            label7.Size = new Size(482, 47);
             label7.TabIndex = 15;
             label7.Text = "SUPPLIER MANAGEMENT";
             // 
             // button3
             // 
-            button3.BackColor = Color.LightSalmon;
+            button3.BackColor = Color.Tomato;
             button3.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button3.Location = new Point(36, 26);
             button3.Name = "button3";
@@ -217,12 +227,33 @@
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources._8;
+            pictureBox1.Location = new Point(-182, -7);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(603, 657);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 17;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources._81;
+            pictureBox2.Location = new Point(418, -7);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(584, 613);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 18;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
+            // 
             // AddSupplier
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Tan;
-            ClientSize = new Size(1002, 589);
+            ClientSize = new Size(1002, 607);
             Controls.Add(button3);
             Controls.Add(label7);
             Controls.Add(dataGridView1);
@@ -240,11 +271,15 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            Controls.Add(pictureBox1);
+            Controls.Add(pictureBox2);
             ForeColor = SystemColors.ActiveCaptionText;
             Name = "AddSupplier";
             Text = "SUPPLIER MANAGEMENT";
             Load += AddSupplier_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -268,5 +303,7 @@
         private DataGridView dataGridView1;
         private Label label7;
         private Button button3;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
     }
 }
