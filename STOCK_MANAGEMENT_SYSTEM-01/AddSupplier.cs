@@ -125,5 +125,14 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
             adminPage.Show();
             this.Hide();
         }
+
+        private void AddSupplier_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+        }
     }
 }
