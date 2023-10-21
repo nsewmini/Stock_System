@@ -41,6 +41,7 @@
             button4 = new Button();
             label4 = new Label();
             pictureBox1 = new PictureBox();
+            button5 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -49,9 +50,10 @@
             // 
             button1.BackColor = Color.LightSalmon;
             button1.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(12, 95);
+            button1.Location = new Point(10, 71);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(111, 39);
+            button1.Size = new Size(97, 29);
             button1.TabIndex = 0;
             button1.Text = "view stocks";
             button1.UseVisualStyleBackColor = false;
@@ -61,11 +63,12 @@
             // 
             dataGridView1.BackgroundColor = Color.Bisque;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(21, 149);
+            dataGridView1.Location = new Point(18, 112);
+            dataGridView1.Margin = new Padding(3, 2, 3, 2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(476, 400);
+            dataGridView1.Size = new Size(416, 300);
             dataGridView1.TabIndex = 1;
             // 
             // label1
@@ -73,9 +76,9 @@
             label1.AutoSize = true;
             label1.BackColor = Color.MistyRose;
             label1.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(519, 149);
+            label1.Location = new Point(454, 112);
             label1.Name = "label1";
-            label1.Size = new Size(102, 27);
+            label1.Size = new Size(84, 22);
             label1.TabIndex = 2;
             label1.Text = "stock_ID";
             // 
@@ -84,9 +87,9 @@
             label2.AutoSize = true;
             label2.BackColor = Color.MistyRose;
             label2.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(519, 199);
+            label2.Location = new Point(454, 149);
             label2.Name = "label2";
-            label2.Size = new Size(130, 27);
+            label2.Size = new Size(107, 22);
             label2.TabIndex = 3;
             label2.Text = "Product_ID";
             // 
@@ -95,9 +98,9 @@
             label3.AutoSize = true;
             label3.BackColor = Color.MistyRose;
             label3.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(519, 250);
+            label3.Location = new Point(454, 188);
             label3.Name = "label3";
-            label3.Size = new Size(103, 27);
+            label3.Size = new Size(85, 22);
             label3.TabIndex = 4;
             label3.Text = "Quantity";
             label3.Click += label3_Click;
@@ -105,26 +108,29 @@
             // textBox1
             // 
             textBox1.BackColor = SystemColors.Info;
-            textBox1.Location = new Point(695, 149);
+            textBox1.Location = new Point(608, 112);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(151, 27);
+            textBox1.Size = new Size(133, 23);
             textBox1.TabIndex = 5;
             // 
             // textBox3
             // 
             textBox3.BackColor = SystemColors.Info;
-            textBox3.Location = new Point(695, 253);
+            textBox3.Location = new Point(608, 190);
+            textBox3.Margin = new Padding(3, 2, 3, 2);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(151, 27);
+            textBox3.Size = new Size(133, 23);
             textBox3.TabIndex = 7;
             // 
             // button2
             // 
             button2.BackColor = Color.LightSalmon;
             button2.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.Location = new Point(519, 424);
+            button2.Location = new Point(440, 318);
+            button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
-            button2.Size = new Size(237, 44);
+            button2.Size = new Size(203, 33);
             button2.TabIndex = 8;
             button2.Text = "Get Product_details";
             button2.UseVisualStyleBackColor = false;
@@ -134,9 +140,10 @@
             // 
             button3.BackColor = Color.LightSalmon;
             button3.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.Location = new Point(617, 305);
+            button3.Location = new Point(540, 229);
+            button3.Margin = new Padding(3, 2, 3, 2);
             button3.Name = "button3";
-            button3.Size = new Size(104, 39);
+            button3.Size = new Size(91, 29);
             button3.TabIndex = 9;
             button3.Text = "ADD";
             button3.UseVisualStyleBackColor = false;
@@ -146,18 +153,20 @@
             // 
             comboBox1.BackColor = SystemColors.Info;
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(695, 198);
+            comboBox1.Location = new Point(608, 148);
+            comboBox1.Margin = new Padding(3, 2, 3, 2);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(151, 28);
+            comboBox1.Size = new Size(133, 23);
             comboBox1.TabIndex = 10;
             // 
             // button4
             // 
             button4.BackColor = Color.LightSalmon;
             button4.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button4.Location = new Point(794, 424);
+            button4.Location = new Point(672, 318);
+            button4.Margin = new Padding(3, 2, 3, 2);
             button4.Name = "button4";
-            button4.Size = new Size(103, 44);
+            button4.Size = new Size(90, 33);
             button4.TabIndex = 11;
             button4.Text = "back";
             button4.UseVisualStyleBackColor = false;
@@ -169,27 +178,39 @@
             label4.BackColor = Color.Tan;
             label4.Font = new Font("Cambria", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.Firebrick;
-            label4.Location = new Point(390, 41);
+            label4.Location = new Point(341, 31);
             label4.Name = "label4";
-            label4.Size = new Size(231, 43);
+            label4.Size = new Size(187, 36);
             label4.TabIndex = 12;
             label4.Text = "STOCK DATA";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources._16;
-            pictureBox1.Location = new Point(2, -18);
+            pictureBox1.Location = new Point(2, -14);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1007, 595);
+            pictureBox1.Size = new Size(881, 446);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 13;
             pictureBox1.TabStop = false;
             // 
+            // button5
+            // 
+            button5.Location = new Point(440, 379);
+            button5.Name = "button5";
+            button5.Size = new Size(165, 23);
+            button5.TabIndex = 14;
+            button5.Text = "Generate";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
             // Stock_Data
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1002, 589);
+            ClientSize = new Size(877, 442);
+            Controls.Add(button5);
             Controls.Add(label4);
             Controls.Add(button4);
             Controls.Add(comboBox1);
@@ -203,6 +224,7 @@
             Controls.Add(dataGridView1);
             Controls.Add(button1);
             Controls.Add(pictureBox1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Stock_Data";
             Text = "Stock_Data";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
@@ -226,5 +248,6 @@
         private Button button4;
         private Label label4;
         private PictureBox pictureBox1;
+        private Button button5;
     }
 }

@@ -2,13 +2,14 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using ClosedXML.Excel;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace STOCK_MANAGEMENT_SYSTEM_01
 {
     public partial class Transactions : Form
     {
-        private const string ConnectionString = "Data Source=NEW-GEN-COMPUTE\\SQLEXPRESS; Initial Catalog=stock_system;Integrated Security=True;";
+        private const string ConnectionString = "Data Source=(LocalDb)\\LocalDBDemo; Initial Catalog=stock_system;Integrated Security=True;";
 
         public Transactions()
         {
@@ -176,6 +177,33 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            using (SaveFileDialog sfd = new SaveFileDialog() { Filter = "Excel workbook|*.xlsx" })
+            {
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        using (XLWorkbook workbook = new XLWorkbook())
+                        {
+                            DataTable dt = (DataTable)dataGridView1.DataSource;
+
+                            workbook.Worksheets.Add(dt, "TRANSACTION_DATA");
+                            workbook.SaveAs(sfd.FileName);
+                        }
+                        MessageBox.Show("You have successfully exported your data to an excel file", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+
+                }
+            }
         }
     }
 }
