@@ -19,7 +19,10 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
         {
             InitializeComponent();
         }
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP-DNJ5VEI\\SQLEXPRESS; Initial Catalog=stock_system; Integrated Security=true; Encrypt=False");
+
+        SqlConnection con = new SqlConnection("Data Source=NEW-GEN-COMPUTE\\SQLEXPRESS; Initial Catalog=stock_system;Integrated Security=True;");
+       // private const string ConnectionString = "Data Source=NEW-GEN-COMPUTE\\SQLEXPRESS; Initial Catalog=stock_system;Integrated Security=True;";
+
 
         private void button1_Click(object sender, EventArgs e)
         {

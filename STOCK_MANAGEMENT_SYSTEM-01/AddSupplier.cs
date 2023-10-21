@@ -131,6 +131,7 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
 
         }
 
+
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
         }
@@ -139,5 +140,6 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
         {
 
         }
+
     }
 }

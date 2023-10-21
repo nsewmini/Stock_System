@@ -24,8 +24,8 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Category_Data categoryPage = new Category_Data();
-            categoryPage.Show();
+            Viewdata_Supplier viewPage = new Viewdata_Supplier();
+            viewPage.Show();
             this.Hide();
         }
 
