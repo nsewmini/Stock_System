@@ -14,7 +14,7 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
 {
     public partial class View_Products : Form
     {
-        private const string ConnectionString = "Data Source=DESKTOP-DNJ5VEI\\SQLEXPRESS; Initial Catalog=stock_system;Integrated Security=True;";
+        private const string ConnectionString = "Data Source=NEW-GEN-COMPUTE\\SQLEXPRESS; Initial Catalog=stock_system;Integrated Security=True;";
 
         public View_Products()
         {
@@ -66,15 +66,44 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
         {
 
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            using (SaveFileDialog sfd = new SaveFileDialog() {Filter="Excel workbook|*.xlsx"})
+            void button3_Click(object sender, EventArgs e)
+            {
+                using (SaveFileDialog sfd = new SaveFileDialog() { Filter = "Excel workbook|*.xlsx" })
                 {
-                    if(sfd.ShowDialog() == DialogResult.OK)
+                    if (sfd.ShowDialog() == DialogResult.OK)
+                    {
+                        try
+                        {
+                            using (XLWorkbook workbook = new XLWorkbook())
+                            {
+                                DataTable dt = (DataTable)dataGridView1.DataSource;
+
+                                workbook.Worksheets.Add(dt, "Products");
+                                workbook.SaveAs(sfd.FileName);
+                            }
+                            MessageBox.Show("You have successfully exported your data to an excel file", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+
+                    }
+                }
+
+            }
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            using (SaveFileDialog sfd = new SaveFileDialog() { Filter = "Excel workbook|*.xlsx" })
+            {
+                if (sfd.ShowDialog() == DialogResult.OK)
                 {
                     try
                     {
-                        using(XLWorkbook workbook = new XLWorkbook())
+                        using (XLWorkbook workbook = new XLWorkbook())
                         {
                             DataTable dt = (DataTable)dataGridView1.DataSource;
 
@@ -84,13 +113,13 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
                         MessageBox.Show("You have successfully exported your data to an excel file", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     }
-                    catch(Exception ex) { 
+                    catch (Exception ex)
+                    {
                         MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
 
                 }
-                }
-
+            }
         }
     }
 }

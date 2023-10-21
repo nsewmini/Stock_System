@@ -14,7 +14,7 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
 {
     public partial class Bill_Data : Form
     {
-        private const string ConnectionString = "Data Source=DESKTOP-DNJ5VEI\\SQLEXPRESS; Initial Catalog=stock_system;Integrated Security=True;";
+        private const string ConnectionString = "Data Source=NEW-GEN-COMPUTE\\SQLEXPRESS; Initial Catalog=stock_system;Integrated Security=True;";
 
         public Bill_Data()
         {
@@ -117,6 +117,11 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
