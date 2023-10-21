@@ -13,7 +13,7 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
 {
     public partial class Viewdata_Supplier : Form
     {
-        private const string ConnectionString = "Data Source=DESKTOP-DNJ5VEI\\SQLEXPRESS; Initial Catalog=stock_system;Integrated Security=True;";
+        private const string ConnectionString = "Data Source=NEW-GEN-COMPUTE\\SQLEXPRESS; Initial Catalog=stock_system;Integrated Security=True;";
 
         public Viewdata_Supplier()
         {

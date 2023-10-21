@@ -47,7 +47,7 @@
             // 
             button1.BackColor = Color.Tomato;
             button1.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(456, 83);
+            button1.Location = new Point(393, 60);
             button1.Name = "button1";
             button1.Size = new Size(242, 68);
             button1.TabIndex = 0;
@@ -59,12 +59,13 @@
             // 
             dataGridView1.BackgroundColor = Color.Tan;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(86, 191);
+            dataGridView1.Location = new Point(20, 157);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(970, 564);
+            dataGridView1.Size = new Size(970, 420);
             dataGridView1.TabIndex = 1;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // button2
             // 
@@ -86,6 +87,7 @@
             pictureBox1.Size = new Size(1153, 787);
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click_1;
             // 
             // GenButton
             // 
@@ -109,7 +111,7 @@
             // button3
             // 
             button3.BackColor = Color.Tomato;
-            button3.Location = new Point(833, 83);
+            button3.Location = new Point(827, 71);
             button3.Name = "button3";
             button3.Size = new Size(110, 53);
             button3.TabIndex = 4;
@@ -121,7 +123,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1145, 785);
+            ClientSize = new Size(1002, 589);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(dataGridView1);

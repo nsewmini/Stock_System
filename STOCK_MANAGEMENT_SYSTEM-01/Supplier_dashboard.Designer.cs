@@ -93,7 +93,7 @@
             button4.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button4.Location = new Point(663, 338);
             button4.Name = "button4";
-            button4.Size = new Size(178, 40);
+            button4.Size = new Size(178, 66);
             button4.TabIndex = 4;
             button4.Text = "handle products";
             button4.UseVisualStyleBackColor = false;

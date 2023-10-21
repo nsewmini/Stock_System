@@ -38,7 +38,7 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
 
         private void button4_Click(object sender, EventArgs e)
         {
-           ViewBilldatafor_Admin BILLPage = new ViewBilldatafor_Admin();
+            ViewBilldatafor_Admin BILLPage = new ViewBilldatafor_Admin();
             BILLPage.Show();
             this.Hide();
 
@@ -62,6 +62,11 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
             Supplier_dashboard productPage = new Supplier_dashboard();
             productPage.Show();
             this.Hide();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

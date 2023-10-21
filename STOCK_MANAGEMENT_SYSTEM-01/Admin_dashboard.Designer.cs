@@ -33,8 +33,6 @@
             button4 = new Button();
             button7 = new Button();
             label1 = new Label();
-            button1 = new Button();
-            button5 = new Button();
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -43,7 +41,7 @@
             // 
             button2.BackColor = Color.LightSalmon;
             button2.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.Location = new Point(160, 159);
+            button2.Location = new Point(192, 208);
             button2.Name = "button2";
             button2.Size = new Size(232, 64);
             button2.TabIndex = 1;
@@ -55,7 +53,7 @@
             // 
             button3.BackColor = Color.LightSalmon;
             button3.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.Location = new Point(160, 282);
+            button3.Location = new Point(192, 355);
             button3.Name = "button3";
             button3.Size = new Size(232, 60);
             button3.TabIndex = 2;
@@ -67,9 +65,9 @@
             // 
             button4.BackColor = Color.LightSalmon;
             button4.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button4.Location = new Point(471, 159);
+            button4.Location = new Point(548, 351);
             button4.Name = "button4";
-            button4.Size = new Size(345, 64);
+            button4.Size = new Size(232, 64);
             button4.TabIndex = 3;
             button4.Text = "billpayments";
             button4.UseVisualStyleBackColor = false;
@@ -79,7 +77,7 @@
             // 
             button7.BackColor = Color.LightSalmon;
             button7.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button7.Location = new Point(160, 420);
+            button7.Location = new Point(548, 208);
             button7.Name = "button7";
             button7.Size = new Size(232, 61);
             button7.TabIndex = 6;
@@ -98,28 +96,6 @@
             label1.TabIndex = 7;
             label1.Text = "ADMIN  DASHBOARD";
             // 
-            // button1
-            // 
-            button1.BackColor = Color.LightSalmon;
-            button1.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(471, 282);
-            button1.Name = "button1";
-            button1.Size = new Size(345, 62);
-            button1.TabIndex = 8;
-            button1.Text = "Finanace operations";
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            button5.BackColor = Color.LightSalmon;
-            button5.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button5.Location = new Point(471, 420);
-            button5.Name = "button5";
-            button5.Size = new Size(345, 63);
-            button5.TabIndex = 9;
-            button5.Text = "plannings to improvements";
-            button5.UseVisualStyleBackColor = false;
-            // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources._71;
@@ -129,6 +105,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 10;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // Admin_dashboard
             // 
@@ -136,8 +113,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Tan;
             ClientSize = new Size(1002, 589);
-            Controls.Add(button5);
-            Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(button7);
             Controls.Add(button4);
@@ -158,8 +133,6 @@
         private Button button4;
         private Button button7;
         private Label label1;
-        private Button button1;
-        private Button button5;
         private PictureBox pictureBox1;
     }
 }
