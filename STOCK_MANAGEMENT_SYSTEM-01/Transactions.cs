@@ -28,6 +28,7 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
 
         private void button2_Click(object sender, EventArgs e)
         {
+            int transaction_ID = int.Parse(textBox1.Text);
             DateTime transactionDate = DateTime.Now;
             int productID = ((ProductItem)comboBox2.SelectedItem).product_ID;
             int customerID = ((CustomerItem)comboBox1.SelectedItem).customer_ID;
@@ -50,7 +51,7 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
                     using (SqlCommand cmd = new SqlCommand("InsertTransactionsData", connection))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.AddWithValue("@Transaction_ID", 0);
+                        cmd.Parameters.AddWithValue("@Transaction_ID", transaction_ID);
                         cmd.Parameters.AddWithValue("@Customer_ID", customerID);
                         cmd.Parameters.AddWithValue("@Product_ID", productID);
                         cmd.Parameters.AddWithValue("@Quantity", quantity);
