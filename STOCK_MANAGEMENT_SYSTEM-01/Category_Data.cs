@@ -25,8 +25,8 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Stock_Data stockdataPage = new Stock_Data();
-            stockdataPage.Show();
+            Products_data productPage = new Products_data();
+            productPage.Show();
             this.Hide();
         }
 

@@ -125,5 +125,10 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
             adminPage.Show();
             this.Hide();
         }
+
+        private void AddSupplier_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

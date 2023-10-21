@@ -38,7 +38,7 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Bill_Data BILLPage = new Bill_Data();
+           ViewBilldatafor_Admin BILLPage = new ViewBilldatafor_Admin();
             BILLPage.Show();
             this.Hide();
 

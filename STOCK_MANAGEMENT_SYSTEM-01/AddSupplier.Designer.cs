@@ -219,6 +219,7 @@
             Controls.Add(label1);
             Name = "AddSupplier";
             Text = "SUPPLIER MANAGEMENT";
+            Load += AddSupplier_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
