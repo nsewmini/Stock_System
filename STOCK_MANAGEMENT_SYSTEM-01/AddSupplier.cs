@@ -7,7 +7,7 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
 {
     public partial class AddSupplier : Form
     {
-        private const string ConnectionString = "Data Source=NEW-GEN-COMPUTE\\SQLEXPRESS; Initial Catalog=stock_system;Integrated Security=True;";
+        private const string ConnectionString = "Data Source=DESKTOP-DNJ5VEI\\SQLEXPRESS; Initial Catalog=stock_system;Integrated Security=True;";
 
         public AddSupplier()
         {
@@ -130,5 +130,16 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
         {
 
         }
+
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

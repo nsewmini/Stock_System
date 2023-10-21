@@ -33,62 +33,101 @@
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             button1 = new Button();
+            label3 = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(169, 113);
+            label1.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(394, 125);
             label1.Name = "label1";
-            label1.Size = new Size(73, 20);
+            label1.Size = new Size(118, 27);
             label1.TabIndex = 0;
             label1.Text = "username";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(169, 162);
+            label2.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(394, 202);
             label2.Name = "label2";
-            label2.Size = new Size(72, 20);
+            label2.Size = new Size(115, 27);
             label2.TabIndex = 1;
             label2.Text = "password";
+            label2.Click += label2_Click;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(322, 106);
+            textBox1.BackColor = SystemColors.Info;
+            textBox1.Location = new Point(542, 119);
+            textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
+            textBox1.Size = new Size(182, 36);
             textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(322, 159);
+            textBox2.BackColor = SystemColors.Info;
+            textBox2.Location = new Point(542, 198);
+            textBox2.Multiline = true;
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 27);
+            textBox2.Size = new Size(182, 35);
             textBox2.TabIndex = 3;
             // 
             // button1
             // 
-            button1.Location = new Point(353, 243);
+            button1.BackColor = Color.LightSalmon;
+            button1.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.Location = new Point(491, 257);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(114, 43);
             button1.TabIndex = 4;
             button1.Text = "Login";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = SystemColors.AppWorkspace;
+            label3.Font = new Font("Cambria", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.Firebrick;
+            label3.Location = new Point(427, 9);
+            label3.Name = "label3";
+            label3.Size = new Size(149, 52);
+            label3.TabIndex = 5;
+            label3.Text = "LOGIN";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.empty_notepad_yellow_repair_tools_with_copy_space;
+            pictureBox1.Location = new Point(-6, -2);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1026, 596);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.Tan;
+            ClientSize = new Size(1002, 589);
+            Controls.Add(label3);
             Controls.Add(button1);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(label2);
             Controls.Add(label1);
+            Controls.Add(pictureBox1);
             Name = "Form1";
             Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -100,5 +139,7 @@
         private TextBox textBox1;
         private TextBox textBox2;
         private Button button1;
+        private Label label3;
+        private PictureBox pictureBox1;
     }
 }

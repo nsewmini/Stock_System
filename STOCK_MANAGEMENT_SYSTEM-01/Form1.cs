@@ -19,8 +19,10 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
         {
             InitializeComponent();
         }
+
         SqlConnection con = new SqlConnection("Data Source=NEW-GEN-COMPUTE\\SQLEXPRESS; Initial Catalog=stock_system;Integrated Security=True;");
        // private const string ConnectionString = "Data Source=NEW-GEN-COMPUTE\\SQLEXPRESS; Initial Catalog=stock_system;Integrated Security=True;";
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -46,5 +48,14 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
             con.Close();
         }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

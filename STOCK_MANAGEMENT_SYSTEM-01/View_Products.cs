@@ -14,7 +14,7 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
 {
     public partial class View_Products : Form
     {
-        private const string ConnectionString = "Data Source=NEW-GEN-COMPUTE\\SQLEXPRESS; Initial Catalog=stock_system;Integrated Security=True;";
+        private const string ConnectionString = "Data Source=DESKTOP-DNJ5VEI\\SQLEXPRESS; Initial Catalog=stock_system;Integrated Security=True;";
 
         public View_Products()
         {
@@ -61,6 +61,11 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
             }
         }
 
+
+        private void View_Products_Load(object sender, EventArgs e)
+        {
+
+
         private void button3_Click(object sender, EventArgs e)
         {
             using (SaveFileDialog sfd = new SaveFileDialog() {Filter="Excel workbook|*.xlsx"})
@@ -85,6 +90,7 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
 
                 }
                 }
+
         }
     }
 }

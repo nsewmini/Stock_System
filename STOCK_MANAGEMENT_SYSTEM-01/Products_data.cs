@@ -7,7 +7,7 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
 {
     public partial class Products_data : Form
     {
-        private const string ConnectionString = "Data Source=NEW-GEN-COMPUTE\\SQLEXPRESS; Initial Catalog=stock_system;Integrated Security=True;";
+        private const string ConnectionString = "Data SourceDESKTOP-DNJ5VEI\\SQLEXPRESS; Initial Catalog=stock_system;Integrated Security=True;";
 
         public Products_data()
         {
@@ -154,8 +154,23 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
         private void button4_Click(object sender, EventArgs e)
         {
             Supplier_dashboard supplierPage = new Supplier_dashboard();
-           supplierPage.Show();
+            supplierPage.Show();
             this.Hide();
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Products_data_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

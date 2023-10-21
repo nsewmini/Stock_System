@@ -51,142 +51,173 @@
             label1 = new Label();
             textBox1 = new TextBox();
             button4 = new Button();
+            label9 = new Label();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)categoryDataBindingSource).BeginInit();
             ((System.ComponentModel.ISupportInitialize)sqlDataRecordBindingSource).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(42, 80);
+            label2.BackColor = Color.MistyRose;
+            label2.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(242, 161);
             label2.Name = "label2";
-            label2.Size = new Size(106, 20);
+            label2.Size = new Size(166, 27);
             label2.TabIndex = 1;
             label2.Text = "Product_Name";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(42, 113);
+            label3.BackColor = Color.MistyRose;
+            label3.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(242, 202);
             label3.Name = "label3";
-            label3.Size = new Size(98, 20);
+            label3.Size = new Size(161, 27);
             label3.TabIndex = 2;
             label3.Text = "Product_Price";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(42, 150);
+            label4.BackColor = Color.MistyRose;
+            label4.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(242, 245);
             label4.Name = "label4";
-            label4.Size = new Size(85, 20);
+            label4.Size = new Size(136, 27);
             label4.TabIndex = 3;
             label4.Text = "Description";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(42, 195);
+            label5.BackColor = Color.MistyRose;
+            label5.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(242, 288);
             label5.Name = "label5";
-            label5.Size = new Size(90, 20);
+            label5.Size = new Size(138, 27);
             label5.TabIndex = 4;
             label5.Text = "Category_ID";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(42, 239);
+            label6.BackColor = Color.MistyRose;
+            label6.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Location = new Point(242, 333);
             label6.Name = "label6";
-            label6.Size = new Size(85, 20);
+            label6.Size = new Size(136, 27);
             label6.TabIndex = 5;
             label6.Text = "Supplier_ID";
+            label6.Click += label6_Click;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(42, 282);
+            label7.BackColor = Color.MistyRose;
+            label7.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Location = new Point(242, 376);
             label7.Name = "label7";
-            label7.Size = new Size(96, 20);
+            label7.Size = new Size(156, 27);
             label7.TabIndex = 6;
             label7.Text = "Units in stock";
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(42, 323);
+            label8.BackColor = Color.MistyRose;
+            label8.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Location = new Point(242, 418);
             label8.Name = "label8";
-            label8.Size = new Size(65, 20);
+            label8.Size = new Size(103, 27);
             label8.TabIndex = 7;
             label8.Text = "Quantity";
+            label8.Click += label8_Click;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(145, 73);
+            textBox2.BackColor = SystemColors.Info;
+            textBox2.Location = new Point(461, 161);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 27);
+            textBox2.Size = new Size(151, 27);
             textBox2.TabIndex = 9;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(145, 113);
+            textBox3.BackColor = SystemColors.Info;
+            textBox3.Location = new Point(461, 202);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(125, 27);
+            textBox3.Size = new Size(151, 27);
             textBox3.TabIndex = 10;
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(145, 282);
+            textBox6.BackColor = SystemColors.Info;
+            textBox6.Location = new Point(461, 376);
             textBox6.Name = "textBox6";
-            textBox6.Size = new Size(125, 27);
+            textBox6.Size = new Size(151, 27);
             textBox6.TabIndex = 13;
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(145, 323);
+            textBox7.BackColor = SystemColors.Info;
+            textBox7.Location = new Point(461, 418);
             textBox7.Name = "textBox7";
-            textBox7.Size = new Size(125, 27);
+            textBox7.Size = new Size(151, 27);
             textBox7.TabIndex = 14;
             // 
             // textBox8
             // 
-            textBox8.Location = new Point(145, 150);
+            textBox8.BackColor = SystemColors.Info;
+            textBox8.Location = new Point(461, 248);
             textBox8.Name = "textBox8";
-            textBox8.Size = new Size(125, 27);
+            textBox8.Size = new Size(151, 27);
             textBox8.TabIndex = 15;
             // 
             // button1
             // 
-            button1.Location = new Point(176, 393);
+            button1.BackColor = Color.LightSalmon;
+            button1.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.Location = new Point(509, 475);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(103, 44);
             button1.TabIndex = 16;
             button1.Text = "Add";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(439, 36);
+            button2.BackColor = Color.LightSalmon;
+            button2.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.Location = new Point(689, 140);
             button2.Name = "button2";
-            button2.Size = new Size(281, 29);
+            button2.Size = new Size(281, 48);
             button2.TabIndex = 17;
             button2.Text = "check category";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // button3
             // 
-            button3.Location = new Point(439, 104);
+            button3.BackColor = Color.LightSalmon;
+            button3.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            button3.Location = new Point(689, 257);
             button3.Name = "button3";
-            button3.Size = new Size(281, 29);
+            button3.Size = new Size(281, 48);
             button3.TabIndex = 18;
             button3.Text = "view stockdata";
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
             // comboBox1
             // 
+            comboBox1.BackColor = SystemColors.Info;
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(145, 195);
+            comboBox1.Location = new Point(461, 287);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(151, 28);
             comboBox1.TabIndex = 19;
@@ -197,8 +228,9 @@
             // 
             // comboBox2
             // 
+            comboBox2.BackColor = SystemColors.Info;
             comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(145, 236);
+            comboBox2.Location = new Point(461, 332);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(151, 28);
             comboBox2.TabIndex = 20;
@@ -210,34 +242,61 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(34, 23);
+            label1.BackColor = Color.MistyRose;
+            label1.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(243, 119);
             label1.Name = "label1";
-            label1.Size = new Size(81, 20);
+            label1.Size = new Size(130, 27);
             label1.TabIndex = 21;
             label1.Text = "Product_ID";
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(145, 23);
+            textBox1.BackColor = SystemColors.Info;
+            textBox1.Location = new Point(461, 119);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
+            textBox1.Size = new Size(151, 27);
             textBox1.TabIndex = 22;
             // 
             // button4
             // 
-            button4.Location = new Point(470, 393);
+            button4.BackColor = Color.LightSalmon;
+            button4.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            button4.Location = new Point(668, 475);
             button4.Name = "button4";
-            button4.Size = new Size(94, 29);
+            button4.Size = new Size(109, 44);
             button4.TabIndex = 23;
             button4.Text = "back";
-            button4.UseVisualStyleBackColor = true;
+            button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.BackColor = Color.Tan;
+            label9.Font = new Font("Cambria", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.ForeColor = Color.Firebrick;
+            label9.Location = new Point(370, 25);
+            label9.Name = "label9";
+            label9.Size = new Size(285, 43);
+            label9.TabIndex = 24;
+            label9.Text = "PRODUCT DATA";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources._15;
+            pictureBox1.Location = new Point(-2, -4);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1004, 581);
+            pictureBox1.TabIndex = 25;
+            pictureBox1.TabStop = false;
             // 
             // Products_data
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1041, 532);
+            ClientSize = new Size(1002, 589);
+            Controls.Add(label9);
             Controls.Add(button4);
             Controls.Add(textBox1);
             Controls.Add(label1);
@@ -258,10 +317,13 @@
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
+            Controls.Add(pictureBox1);
             Name = "Products_data";
             Text = "Products_data";
+            Load += Products_data_Load;
             ((System.ComponentModel.ISupportInitialize)categoryDataBindingSource).EndInit();
             ((System.ComponentModel.ISupportInitialize)sqlDataRecordBindingSource).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -289,5 +351,7 @@
         private Label label1;
         private TextBox textBox1;
         private Button button4;
+        private Label label9;
+        private PictureBox pictureBox1;
     }
 }

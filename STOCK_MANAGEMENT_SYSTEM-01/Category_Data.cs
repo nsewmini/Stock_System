@@ -15,7 +15,7 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
     public partial class Category_Data : Form
     {
 
-        private const string ConnectionString = "Data Source=NEW-GEN-COMPUTE\\SQLEXPRESS; Initial Catalog=stock_system;Integrated Security=True;";
+        private const string ConnectionString = "Data Source=DESKTOP-DNJ5VEI\\SQLEXPRESS; Initial Catalog=stock_system;Integrated Security=True;";
 
 
         public Category_Data()
@@ -110,7 +110,7 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
         private void button4_Click(object sender, EventArgs e)
         {
 
-           Products_data productdataPage = new Products_data();
+            Products_data productdataPage = new Products_data();
             productdataPage.Show();
             this.Hide();
         }
