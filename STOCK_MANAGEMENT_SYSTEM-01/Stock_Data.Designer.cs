@@ -50,7 +50,7 @@
             // 
             button1.BackColor = Color.LightSalmon;
             button1.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(14, 118);
+            button1.Location = new Point(662, 87);
             button1.Margin = new Padding(4, 3, 4, 3);
             button1.Name = "button1";
             button1.Size = new Size(139, 48);
@@ -61,14 +61,14 @@
             // 
             // dataGridView1
             // 
-            dataGridView1.BackgroundColor = Color.Bisque;
+            dataGridView1.BackgroundColor = Color.Silver;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(26, 187);
+            dataGridView1.Location = new Point(0, 96);
             dataGridView1.Margin = new Padding(4, 3, 4, 3);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(594, 500);
+            dataGridView1.Size = new Size(627, 500);
             dataGridView1.TabIndex = 1;
             // 
             // label1
@@ -76,7 +76,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.MistyRose;
             label1.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(649, 187);
+            label1.Location = new Point(693, 187);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(124, 33);
@@ -88,7 +88,7 @@
             label2.AutoSize = true;
             label2.BackColor = Color.MistyRose;
             label2.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(649, 248);
+            label2.Location = new Point(693, 247);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(158, 33);
@@ -100,7 +100,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.MistyRose;
             label3.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(649, 313);
+            label3.Location = new Point(693, 299);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
             label3.Size = new Size(127, 33);
@@ -111,7 +111,7 @@
             // textBox1
             // 
             textBox1.BackColor = SystemColors.Info;
-            textBox1.Location = new Point(869, 187);
+            textBox1.Location = new Point(857, 191);
             textBox1.Margin = new Padding(4, 3, 4, 3);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(188, 31);
@@ -120,7 +120,7 @@
             // textBox3
             // 
             textBox3.BackColor = SystemColors.Info;
-            textBox3.Location = new Point(869, 317);
+            textBox3.Location = new Point(857, 312);
             textBox3.Margin = new Padding(4, 3, 4, 3);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(188, 31);
@@ -156,7 +156,7 @@
             // 
             comboBox1.BackColor = SystemColors.Info;
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(869, 247);
+            comboBox1.Location = new Point(857, 247);
             comboBox1.Margin = new Padding(4, 3, 4, 3);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(188, 33);
@@ -166,7 +166,7 @@
             // 
             button4.BackColor = Color.LightSalmon;
             button4.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button4.Location = new Point(649, 378);
+            button4.Location = new Point(662, 378);
             button4.Margin = new Padding(4, 3, 4, 3);
             button4.Name = "button4";
             button4.Size = new Size(129, 55);
@@ -178,10 +178,10 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.BackColor = Color.Tan;
+            label4.BackColor = Color.SeaShell;
             label4.Font = new Font("Cambria", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.ForeColor = Color.Firebrick;
-            label4.Location = new Point(487, 52);
+            label4.ForeColor = Color.Black;
+            label4.Location = new Point(177, 9);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
             label4.Size = new Size(279, 53);
@@ -191,10 +191,10 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources._16;
-            pictureBox1.Location = new Point(3, -23);
+            pictureBox1.Location = new Point(635, -7);
             pictureBox1.Margin = new Padding(4, 3, 4, 3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1259, 743);
+            pictureBox1.Size = new Size(434, 677);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 13;
             pictureBox1.TabStop = false;
