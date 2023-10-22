@@ -44,7 +44,7 @@
             button1.BackColor = Color.LightSalmon;
             button1.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button1.Location = new Point(870, 179);
-            button1.Margin = new Padding(4, 4, 4, 4);
+            button1.Margin = new Padding(4);
             button1.Name = "button1";
             button1.Size = new Size(212, 52);
             button1.TabIndex = 0;
@@ -57,7 +57,7 @@
             button2.BackColor = Color.LightSalmon;
             button2.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button2.Location = new Point(36, 114);
-            button2.Margin = new Padding(4, 4, 4, 4);
+            button2.Margin = new Padding(4);
             button2.Name = "button2";
             button2.Size = new Size(215, 44);
             button2.TabIndex = 1;
@@ -70,7 +70,7 @@
             dataGridView1.BackgroundColor = Color.Bisque;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(36, 179);
-            dataGridView1.Margin = new Padding(4, 4, 4, 4);
+            dataGridView1.Margin = new Padding(4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
@@ -94,18 +94,19 @@
             // 
             pictureBox1.Image = Properties.Resources._8;
             pictureBox1.Location = new Point(-9, -2);
-            pictureBox1.Margin = new Padding(4, 4, 4, 4);
+            pictureBox1.Margin = new Padding(4);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(546, 626);
             pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources._8;
             pictureBox2.Location = new Point(671, -2);
-            pictureBox2.Margin = new Padding(4, 4, 4, 4);
+            pictureBox2.Margin = new Padding(4);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(581, 738);
             pictureBox2.TabIndex = 6;
@@ -122,7 +123,7 @@
             Controls.Add(button1);
             Controls.Add(pictureBox1);
             Controls.Add(pictureBox2);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "Customer_Dashboard";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Customer_Dashboard";

@@ -45,7 +45,7 @@
             button1.BackColor = Color.LightSalmon;
             button1.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button1.Location = new Point(15, 155);
-            button1.Margin = new Padding(4, 4, 4, 4);
+            button1.Margin = new Padding(4);
             button1.Name = "button1";
             button1.Size = new Size(208, 54);
             button1.TabIndex = 0;
@@ -58,7 +58,7 @@
             dataGridView1.BackgroundColor = Color.Bisque;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(15, 239);
-            dataGridView1.Margin = new Padding(4, 4, 4, 4);
+            dataGridView1.Margin = new Padding(4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
@@ -70,7 +70,7 @@
             button2.BackColor = Color.LightSalmon;
             button2.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button2.Location = new Point(829, 239);
-            button2.Margin = new Padding(4, 4, 4, 4);
+            button2.Margin = new Padding(4);
             button2.Name = "button2";
             button2.Size = new Size(222, 51);
             button2.TabIndex = 2;
@@ -83,7 +83,7 @@
             button3.BackColor = Color.LightSalmon;
             button3.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button3.Location = new Point(829, 339);
-            button3.Margin = new Padding(4, 4, 4, 4);
+            button3.Margin = new Padding(4);
             button3.Name = "button3";
             button3.Size = new Size(222, 46);
             button3.TabIndex = 3;
@@ -96,7 +96,7 @@
             button4.BackColor = Color.LightSalmon;
             button4.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button4.Location = new Point(829, 422);
-            button4.Margin = new Padding(4, 4, 4, 4);
+            button4.Margin = new Padding(4);
             button4.Name = "button4";
             button4.Size = new Size(222, 82);
             button4.TabIndex = 4;
@@ -109,7 +109,7 @@
             button5.BackColor = Color.LightSalmon;
             button5.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button5.Location = new Point(829, 578);
-            button5.Margin = new Padding(4, 4, 4, 4);
+            button5.Margin = new Padding(4);
             button5.Name = "button5";
             button5.Size = new Size(141, 56);
             button5.TabIndex = 5;
@@ -135,11 +135,12 @@
             // 
             pictureBox1.Image = Properties.Resources._17;
             pictureBox1.Location = new Point(-2, -2);
-            pictureBox1.Margin = new Padding(4, 4, 4, 4);
+            pictureBox1.Margin = new Padding(4);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(1255, 740);
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // Supplier_dashboard
             // 
@@ -154,7 +155,7 @@
             Controls.Add(dataGridView1);
             Controls.Add(button1);
             Controls.Add(pictureBox1);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "Supplier_dashboard";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Supplier_dashboard";

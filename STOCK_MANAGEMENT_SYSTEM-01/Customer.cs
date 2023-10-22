@@ -14,7 +14,7 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
 {
     public partial class Customer : Form
     {
-        private const string ConnectionString = "Data Source=NEW-GEN-COMPUTE\\SQLEXPRESS; Initial Catalog=stock_system;Integrated Security=True;";
+        private const string ConnectionString = "Data Source=NIMESH; Initial Catalog=Hardware_stock_management_system;Integrated Security=True;";
 
         public Customer()
         {
@@ -113,6 +113,11 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
             Admin_dashboard adminPage = new Admin_dashboard();
             adminPage.Show();
             this.Hide();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

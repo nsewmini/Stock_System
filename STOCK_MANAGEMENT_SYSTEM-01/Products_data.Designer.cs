@@ -148,7 +148,7 @@
             // 
             textBox2.BackColor = SystemColors.Info;
             textBox2.Location = new Point(576, 201);
-            textBox2.Margin = new Padding(4, 4, 4, 4);
+            textBox2.Margin = new Padding(4);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(188, 31);
             textBox2.TabIndex = 9;
@@ -157,7 +157,7 @@
             // 
             textBox3.BackColor = SystemColors.Info;
             textBox3.Location = new Point(576, 252);
-            textBox3.Margin = new Padding(4, 4, 4, 4);
+            textBox3.Margin = new Padding(4);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(188, 31);
             textBox3.TabIndex = 10;
@@ -166,7 +166,7 @@
             // 
             textBox6.BackColor = SystemColors.Info;
             textBox6.Location = new Point(576, 470);
-            textBox6.Margin = new Padding(4, 4, 4, 4);
+            textBox6.Margin = new Padding(4);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(188, 31);
             textBox6.TabIndex = 13;
@@ -175,7 +175,7 @@
             // 
             textBox7.BackColor = SystemColors.Info;
             textBox7.Location = new Point(576, 522);
-            textBox7.Margin = new Padding(4, 4, 4, 4);
+            textBox7.Margin = new Padding(4);
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(188, 31);
             textBox7.TabIndex = 14;
@@ -184,7 +184,7 @@
             // 
             textBox8.BackColor = SystemColors.Info;
             textBox8.Location = new Point(576, 310);
-            textBox8.Margin = new Padding(4, 4, 4, 4);
+            textBox8.Margin = new Padding(4);
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(188, 31);
             textBox8.TabIndex = 15;
@@ -194,7 +194,7 @@
             button1.BackColor = Color.LightSalmon;
             button1.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button1.Location = new Point(636, 594);
-            button1.Margin = new Padding(4, 4, 4, 4);
+            button1.Margin = new Padding(4);
             button1.Name = "button1";
             button1.Size = new Size(129, 55);
             button1.TabIndex = 16;
@@ -207,7 +207,7 @@
             button2.BackColor = Color.LightSalmon;
             button2.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button2.Location = new Point(861, 175);
-            button2.Margin = new Padding(4, 4, 4, 4);
+            button2.Margin = new Padding(4);
             button2.Name = "button2";
             button2.Size = new Size(351, 60);
             button2.TabIndex = 17;
@@ -220,7 +220,7 @@
             button3.BackColor = Color.LightSalmon;
             button3.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button3.Location = new Point(861, 321);
-            button3.Margin = new Padding(4, 4, 4, 4);
+            button3.Margin = new Padding(4);
             button3.Name = "button3";
             button3.Size = new Size(351, 60);
             button3.TabIndex = 18;
@@ -233,7 +233,7 @@
             comboBox1.BackColor = SystemColors.Info;
             comboBox1.FormattingEnabled = true;
             comboBox1.Location = new Point(576, 359);
-            comboBox1.Margin = new Padding(4, 4, 4, 4);
+            comboBox1.Margin = new Padding(4);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(188, 33);
             comboBox1.TabIndex = 19;
@@ -243,7 +243,7 @@
             comboBox2.BackColor = SystemColors.Info;
             comboBox2.FormattingEnabled = true;
             comboBox2.Location = new Point(576, 415);
-            comboBox2.Margin = new Padding(4, 4, 4, 4);
+            comboBox2.Margin = new Padding(4);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(188, 33);
             comboBox2.TabIndex = 20;
@@ -268,7 +268,7 @@
             // 
             textBox1.BackColor = SystemColors.Info;
             textBox1.Location = new Point(576, 149);
-            textBox1.Margin = new Padding(4, 4, 4, 4);
+            textBox1.Margin = new Padding(4);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(188, 31);
             textBox1.TabIndex = 22;
@@ -278,7 +278,7 @@
             button4.BackColor = Color.LightSalmon;
             button4.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button4.Location = new Point(835, 594);
-            button4.Margin = new Padding(4, 4, 4, 4);
+            button4.Margin = new Padding(4);
             button4.Name = "button4";
             button4.Size = new Size(136, 55);
             button4.TabIndex = 23;
@@ -303,11 +303,12 @@
             // 
             pictureBox1.Image = Properties.Resources._15;
             pictureBox1.Location = new Point(-2, -5);
-            pictureBox1.Margin = new Padding(4, 4, 4, 4);
+            pictureBox1.Margin = new Padding(4);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(1255, 726);
             pictureBox1.TabIndex = 25;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // Products_data
             // 
@@ -336,7 +337,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(pictureBox1);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "Products_data";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Products_data";

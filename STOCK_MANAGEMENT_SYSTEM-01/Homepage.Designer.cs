@@ -43,7 +43,7 @@
             button1.BackColor = Color.LightSalmon;
             button1.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button1.Location = new Point(234, 151);
-            button1.Margin = new Padding(4, 4, 4, 4);
+            button1.Margin = new Padding(4);
             button1.Name = "button1";
             button1.Size = new Size(370, 72);
             button1.TabIndex = 0;
@@ -56,7 +56,7 @@
             button2.BackColor = Color.LightSalmon;
             button2.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button2.Location = new Point(234, 306);
-            button2.Margin = new Padding(4, 4, 4, 4);
+            button2.Margin = new Padding(4);
             button2.Name = "button2";
             button2.Size = new Size(370, 74);
             button2.TabIndex = 1;
@@ -69,7 +69,7 @@
             button3.BackColor = Color.LightSalmon;
             button3.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button3.Location = new Point(234, 486);
-            button3.Margin = new Padding(4, 4, 4, 4);
+            button3.Margin = new Padding(4);
             button3.Name = "button3";
             button3.Size = new Size(370, 71);
             button3.TabIndex = 2;
@@ -94,7 +94,7 @@
             // 
             pictureBox1.Image = Properties.Resources.contractor_18315579;
             pictureBox1.Location = new Point(782, 0);
-            pictureBox1.Margin = new Padding(4, 4, 4, 4);
+            pictureBox1.Margin = new Padding(4);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(495, 741);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -106,11 +106,12 @@
             // 
             pictureBox2.Image = Properties.Resources.frame_made_different_tools_toy_car_23_2148096416;
             pictureBox2.Location = new Point(-1, 0);
-            pictureBox2.Margin = new Padding(4, 4, 4, 4);
+            pictureBox2.Margin = new Padding(4);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(828, 741);
             pictureBox2.TabIndex = 5;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // Homepage
             // 
@@ -124,7 +125,7 @@
             Controls.Add(button1);
             Controls.Add(pictureBox1);
             Controls.Add(pictureBox2);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "Homepage";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Homepage";

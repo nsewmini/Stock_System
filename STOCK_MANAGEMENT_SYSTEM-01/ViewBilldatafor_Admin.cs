@@ -15,7 +15,7 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
     public partial class ViewBilldatafor_Admin : Form
     {
 
-        private const string ConnectionString = "Data Source=(LocalDb)\\LocalDBDemo; Initial Catalog=stock_system;Integrated Security=True;";
+        private const string ConnectionString = "Data Source=NIMESH; Initial Catalog = Hardware_stock_management_system; Integrated Security=True;";
 
         public ViewBilldatafor_Admin()
         {

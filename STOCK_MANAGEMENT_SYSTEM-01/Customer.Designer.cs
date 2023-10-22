@@ -100,7 +100,7 @@
             // textBox2
             // 
             textBox2.Location = new Point(280, 269);
-            textBox2.Margin = new Padding(4, 4, 4, 4);
+            textBox2.Margin = new Padding(4);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(155, 31);
             textBox2.TabIndex = 6;
@@ -108,7 +108,7 @@
             // textBox3
             // 
             textBox3.Location = new Point(280, 346);
-            textBox3.Margin = new Padding(4, 4, 4, 4);
+            textBox3.Margin = new Padding(4);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(155, 31);
             textBox3.TabIndex = 7;
@@ -116,7 +116,7 @@
             // textBox4
             // 
             textBox4.Location = new Point(280, 422);
-            textBox4.Margin = new Padding(4, 4, 4, 4);
+            textBox4.Margin = new Padding(4);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(155, 31);
             textBox4.TabIndex = 8;
@@ -124,7 +124,7 @@
             // textBox5
             // 
             textBox5.Location = new Point(280, 501);
-            textBox5.Margin = new Padding(4, 4, 4, 4);
+            textBox5.Margin = new Padding(4);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(155, 31);
             textBox5.TabIndex = 9;
@@ -134,7 +134,7 @@
             button1.BackColor = Color.LightSalmon;
             button1.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button1.Location = new Point(249, 636);
-            button1.Margin = new Padding(4, 4, 4, 4);
+            button1.Margin = new Padding(4);
             button1.Name = "button1";
             button1.Size = new Size(160, 58);
             button1.TabIndex = 10;
@@ -157,7 +157,7 @@
             // textBox1
             // 
             textBox1.Location = new Point(280, 199);
-            textBox1.Margin = new Padding(4, 4, 4, 4);
+            textBox1.Margin = new Padding(4);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(155, 31);
             textBox1.TabIndex = 12;
@@ -167,7 +167,7 @@
             button2.BackColor = Color.LightSalmon;
             button2.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button2.Location = new Point(28, 636);
-            button2.Margin = new Padding(4, 4, 4, 4);
+            button2.Margin = new Padding(4);
             button2.Name = "button2";
             button2.Size = new Size(162, 58);
             button2.TabIndex = 13;
@@ -180,7 +180,7 @@
             dataGridView1.BackgroundColor = Color.BlanchedAlmond;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(465, 129);
-            dataGridView1.Margin = new Padding(4, 4, 4, 4);
+            dataGridView1.Margin = new Padding(4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
@@ -192,7 +192,7 @@
             button3.BackColor = Color.LightSalmon;
             button3.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button3.Location = new Point(55, 42);
-            button3.Margin = new Padding(4, 4, 4, 4);
+            button3.Margin = new Padding(4);
             button3.Name = "button3";
             button3.Size = new Size(135, 45);
             button3.TabIndex = 15;
@@ -216,12 +216,13 @@
             // 
             pictureBox1.Image = Properties.Resources._101;
             pictureBox1.Location = new Point(-101, -71);
-            pictureBox1.Margin = new Padding(4, 4, 4, 4);
+            pictureBox1.Margin = new Padding(4);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(1365, 818);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 18;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // Customer
             // 
@@ -245,7 +246,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(pictureBox1);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "Customer";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Customer";

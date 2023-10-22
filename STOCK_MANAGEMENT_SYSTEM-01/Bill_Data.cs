@@ -14,7 +14,7 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
 {
     public partial class Bill_Data : Form
     {
-        private const string ConnectionString = "Data Source=NEW-GEN-COMPUTE\\SQLEXPRESS; Initial Catalog=stock_system;Integrated Security=True;";
+        private const string ConnectionString = "Data Source=NIMESH; Initial Catalog=Hardware_stock_management_system;Integrated Security=True;";
 
         public Bill_Data()
         {

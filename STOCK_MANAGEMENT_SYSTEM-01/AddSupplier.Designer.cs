@@ -130,7 +130,7 @@
             // 
             textBox1.BackColor = SystemColors.Info;
             textBox1.Location = new Point(248, 160);
-            textBox1.Margin = new Padding(4, 4, 4, 4);
+            textBox1.Margin = new Padding(4);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(155, 31);
             textBox1.TabIndex = 6;
@@ -139,7 +139,7 @@
             // 
             textBox2.BackColor = SystemColors.Info;
             textBox2.Location = new Point(248, 228);
-            textBox2.Margin = new Padding(4, 4, 4, 4);
+            textBox2.Margin = new Padding(4);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(155, 31);
             textBox2.TabIndex = 7;
@@ -148,7 +148,7 @@
             // 
             textBox3.BackColor = SystemColors.Info;
             textBox3.Location = new Point(248, 282);
-            textBox3.Margin = new Padding(4, 4, 4, 4);
+            textBox3.Margin = new Padding(4);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(155, 31);
             textBox3.TabIndex = 8;
@@ -157,7 +157,7 @@
             // 
             textBox4.BackColor = SystemColors.Info;
             textBox4.Location = new Point(248, 339);
-            textBox4.Margin = new Padding(4, 4, 4, 4);
+            textBox4.Margin = new Padding(4);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(155, 31);
             textBox4.TabIndex = 9;
@@ -166,7 +166,7 @@
             // 
             textBox5.BackColor = SystemColors.Info;
             textBox5.Location = new Point(248, 398);
-            textBox5.Margin = new Padding(4, 4, 4, 4);
+            textBox5.Margin = new Padding(4);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(155, 31);
             textBox5.TabIndex = 10;
@@ -175,7 +175,7 @@
             // 
             textBox6.BackColor = SystemColors.Info;
             textBox6.Location = new Point(248, 456);
-            textBox6.Margin = new Padding(4, 4, 4, 4);
+            textBox6.Margin = new Padding(4);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(155, 31);
             textBox6.TabIndex = 11;
@@ -185,7 +185,7 @@
             button1.BackColor = Color.Tomato;
             button1.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button1.Location = new Point(15, 554);
-            button1.Margin = new Padding(4, 4, 4, 4);
+            button1.Margin = new Padding(4);
             button1.Name = "button1";
             button1.Size = new Size(181, 62);
             button1.TabIndex = 12;
@@ -198,7 +198,7 @@
             button2.BackColor = Color.Tomato;
             button2.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button2.Location = new Point(215, 554);
-            button2.Margin = new Padding(4, 4, 4, 4);
+            button2.Margin = new Padding(4);
             button2.Name = "button2";
             button2.Size = new Size(189, 62);
             button2.TabIndex = 13;
@@ -211,7 +211,7 @@
             dataGridView1.BackgroundColor = Color.Bisque;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(444, 144);
-            dataGridView1.Margin = new Padding(4, 4, 4, 4);
+            dataGridView1.Margin = new Padding(4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
@@ -236,7 +236,7 @@
             button3.BackColor = Color.Tomato;
             button3.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button3.Location = new Point(45, 32);
-            button3.Margin = new Padding(4, 4, 4, 4);
+            button3.Margin = new Padding(4);
             button3.Name = "button3";
             button3.Size = new Size(118, 55);
             button3.TabIndex = 16;
@@ -248,18 +248,19 @@
             // 
             pictureBox1.Image = Properties.Resources._8;
             pictureBox1.Location = new Point(-228, -9);
-            pictureBox1.Margin = new Padding(4, 4, 4, 4);
+            pictureBox1.Margin = new Padding(4);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(754, 821);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 17;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources._81;
             pictureBox2.Location = new Point(522, -9);
-            pictureBox2.Margin = new Padding(4, 4, 4, 4);
+            pictureBox2.Margin = new Padding(4);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(730, 766);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -293,7 +294,7 @@
             Controls.Add(pictureBox1);
             Controls.Add(pictureBox2);
             ForeColor = SystemColors.ActiveCaptionText;
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "AddSupplier";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "SUPPLIER MANAGEMENT";

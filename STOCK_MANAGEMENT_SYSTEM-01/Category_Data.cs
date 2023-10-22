@@ -15,7 +15,7 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
     public partial class Category_Data : Form
     {
 
-        private const string ConnectionString = "Data Source=NEW-GEN-COMPUTE\\SQLEXPRESS; Initial Catalog=stock_system;Integrated Security=True;";
+        private const string ConnectionString = "Data Source=NIMESH; Initial Catalog=Hardware_stock_management_system;Integrated Security=True;";
 
 
         public Category_Data()
@@ -113,6 +113,11 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
             Products_data productdataPage = new Products_data();
             productdataPage.Show();
             this.Hide();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

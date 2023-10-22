@@ -14,7 +14,7 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
 {
     public partial class Viewdata_Supplier : Form
     {
-        private const string ConnectionString = "Data Source=(LocalDb)\\LocalDBDemo; Initial Catalog=stock_system;Integrated Security=True;";
+        private const string ConnectionString = "Data Source=NIMESH; Initial Catalog=Hardware_stock_management_system;Integrated Security=True;";
 
         public Viewdata_Supplier()
         {
@@ -85,6 +85,11 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
 
                 }
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

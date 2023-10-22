@@ -39,10 +39,11 @@
             // 
             // button2
             // 
-            button2.BackColor = Color.LightSalmon;
+            button2.BackColor = Color.Teal;
             button2.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.Location = new Point(240, 260);
-            button2.Margin = new Padding(4, 4, 4, 4);
+            button2.ForeColor = SystemColors.ButtonHighlight;
+            button2.Location = new Point(174, 224);
+            button2.Margin = new Padding(4);
             button2.Name = "button2";
             button2.Size = new Size(290, 80);
             button2.TabIndex = 1;
@@ -52,10 +53,11 @@
             // 
             // button3
             // 
-            button3.BackColor = Color.LightSalmon;
+            button3.BackColor = Color.Teal;
             button3.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.Location = new Point(240, 444);
-            button3.Margin = new Padding(4, 4, 4, 4);
+            button3.ForeColor = SystemColors.ButtonHighlight;
+            button3.Location = new Point(174, 418);
+            button3.Margin = new Padding(4);
             button3.Name = "button3";
             button3.Size = new Size(290, 75);
             button3.TabIndex = 2;
@@ -65,10 +67,11 @@
             // 
             // button4
             // 
-            button4.BackColor = Color.LightSalmon;
+            button4.BackColor = Color.Teal;
             button4.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button4.Location = new Point(685, 439);
-            button4.Margin = new Padding(4, 4, 4, 4);
+            button4.ForeColor = SystemColors.ButtonHighlight;
+            button4.Location = new Point(557, 418);
+            button4.Margin = new Padding(4);
             button4.Name = "button4";
             button4.Size = new Size(290, 80);
             button4.TabIndex = 3;
@@ -78,10 +81,11 @@
             // 
             // button7
             // 
-            button7.BackColor = Color.LightSalmon;
+            button7.BackColor = Color.Teal;
             button7.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button7.Location = new Point(685, 260);
-            button7.Margin = new Padding(4, 4, 4, 4);
+            button7.ForeColor = SystemColors.ButtonHighlight;
+            button7.Location = new Point(557, 228);
+            button7.Margin = new Padding(4);
             button7.Name = "button7";
             button7.Size = new Size(290, 76);
             button7.TabIndex = 6;
@@ -92,9 +96,10 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Cambria", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.Firebrick;
-            label1.Location = new Point(379, 88);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(262, 124);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(523, 61);
@@ -104,10 +109,10 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources._71;
-            pictureBox1.Location = new Point(5, 5);
-            pictureBox1.Margin = new Padding(4, 4, 4, 4);
+            pictureBox1.Location = new Point(-194, -43);
+            pictureBox1.Margin = new Padding(4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1242, 730);
+            pictureBox1.Size = new Size(1444, 778);
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 10;
             pictureBox1.TabStop = false;
@@ -125,7 +130,7 @@
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(pictureBox1);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "Admin_dashboard";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Admin_dashboard";
