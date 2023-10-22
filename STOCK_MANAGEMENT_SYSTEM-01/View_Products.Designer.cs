@@ -47,9 +47,10 @@
             // 
             button1.BackColor = Color.Tomato;
             button1.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(393, 60);
+            button1.Location = new Point(349, 63);
+            button1.Margin = new Padding(4, 4, 4, 4);
             button1.Name = "button1";
-            button1.Size = new Size(242, 68);
+            button1.Size = new Size(302, 85);
             button1.TabIndex = 0;
             button1.Text = "view products";
             button1.UseVisualStyleBackColor = false;
@@ -59,20 +60,22 @@
             // 
             dataGridView1.BackgroundColor = Color.Tan;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(20, 157);
+            dataGridView1.Location = new Point(25, 196);
+            dataGridView1.Margin = new Padding(4, 4, 4, 4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(970, 420);
+            dataGridView1.Size = new Size(1212, 525);
             dataGridView1.TabIndex = 1;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // button2
             // 
             button2.BackColor = Color.Tomato;
-            button2.Location = new Point(37, 60);
+            button2.Location = new Point(46, 75);
+            button2.Margin = new Padding(4, 4, 4, 4);
             button2.Name = "button2";
-            button2.Size = new Size(110, 53);
+            button2.Size = new Size(138, 66);
             button2.TabIndex = 2;
             button2.Text = "back";
             button2.UseVisualStyleBackColor = false;
@@ -82,19 +85,19 @@
             // 
             pictureBox1.Image = Properties.Resources._12;
             pictureBox1.Location = new Point(2, -1);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Margin = new Padding(4, 5, 4, 5);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1153, 787);
+            pictureBox1.Size = new Size(1441, 984);
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click_1;
             // 
             // GenButton
             // 
-            GenButton.Location = new Point(653, 53);
-            GenButton.Margin = new Padding(3, 4, 3, 4);
+            GenButton.Location = new Point(816, 66);
+            GenButton.Margin = new Padding(4, 5, 4, 5);
             GenButton.Name = "GenButton";
-            GenButton.Size = new Size(86, 31);
+            GenButton.Size = new Size(108, 39);
             GenButton.TabIndex = 3;
             GenButton.Text = "Generate ";
             GenButton.UseVisualStyleBackColor = true;
@@ -111,9 +114,10 @@
             // button3
             // 
             button3.BackColor = Color.Tomato;
-            button3.Location = new Point(827, 71);
+            button3.Location = new Point(888, 75);
+            button3.Margin = new Padding(4, 4, 4, 4);
             button3.Name = "button3";
-            button3.Size = new Size(110, 53);
+            button3.Size = new Size(138, 66);
             button3.TabIndex = 4;
             button3.Text = "Generate";
             button3.UseVisualStyleBackColor = false;
@@ -121,16 +125,18 @@
             // 
             // View_Products
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1002, 589);
+            ClientSize = new Size(1058, 664);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(dataGridView1);
             Controls.Add(button1);
             Controls.Add(pictureBox1);
             Controls.Add(GenButton);
+            Margin = new Padding(4, 4, 4, 4);
             Name = "View_Products";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "View_Products";
             Load += View_Products_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

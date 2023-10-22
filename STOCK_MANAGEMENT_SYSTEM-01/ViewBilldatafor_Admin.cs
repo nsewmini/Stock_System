@@ -77,7 +77,7 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
                         using (XLWorkbook workbook = new XLWorkbook())
                         {
                             DataTable dt = (DataTable)dataGridView1.DataSource;
-                            workbook.Worksheets.Add(dt,"BILL_DATA");
+                            workbook.Worksheets.Add(dt, "BILL_DATA");
                             workbook.SaveAs(sfd.FileName);
                         }
                         MessageBox.Show("You have successfully exported your data to an excel file", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -90,6 +90,11 @@ namespace STOCK_MANAGEMENT_SYSTEM_01
 
                 }
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

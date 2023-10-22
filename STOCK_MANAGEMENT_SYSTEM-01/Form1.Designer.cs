@@ -42,9 +42,10 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(394, 125);
+            label1.Location = new Point(492, 156);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(118, 27);
+            label1.Size = new Size(145, 33);
             label1.TabIndex = 0;
             label1.Text = "username";
             // 
@@ -52,9 +53,10 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(394, 202);
+            label2.Location = new Point(492, 252);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(115, 27);
+            label2.Size = new Size(140, 33);
             label2.TabIndex = 1;
             label2.Text = "password";
             label2.Click += label2_Click;
@@ -62,28 +64,31 @@
             // textBox1
             // 
             textBox1.BackColor = SystemColors.Info;
-            textBox1.Location = new Point(542, 119);
+            textBox1.Location = new Point(678, 149);
+            textBox1.Margin = new Padding(4, 4, 4, 4);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(182, 36);
+            textBox1.Size = new Size(226, 44);
             textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
             textBox2.BackColor = SystemColors.Info;
-            textBox2.Location = new Point(542, 198);
+            textBox2.Location = new Point(678, 248);
+            textBox2.Margin = new Padding(4, 4, 4, 4);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(182, 35);
+            textBox2.Size = new Size(226, 43);
             textBox2.TabIndex = 3;
             // 
             // button1
             // 
             button1.BackColor = Color.LightSalmon;
             button1.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(491, 257);
+            button1.Location = new Point(614, 321);
+            button1.Margin = new Padding(4, 4, 4, 4);
             button1.Name = "button1";
-            button1.Size = new Size(114, 43);
+            button1.Size = new Size(142, 54);
             button1.TabIndex = 4;
             button1.Text = "Login";
             button1.UseVisualStyleBackColor = false;
@@ -95,18 +100,20 @@
             label3.BackColor = SystemColors.AppWorkspace;
             label3.Font = new Font("Cambria", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.Firebrick;
-            label3.Location = new Point(427, 9);
+            label3.Location = new Point(534, 11);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(149, 52);
+            label3.Size = new Size(178, 61);
             label3.TabIndex = 5;
             label3.Text = "LOGIN";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.empty_notepad_yellow_repair_tools_with_copy_space;
-            pictureBox1.Location = new Point(-6, -2);
+            pictureBox1.Location = new Point(-8, -2);
+            pictureBox1.Margin = new Padding(4, 4, 4, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1026, 596);
+            pictureBox1.Size = new Size(1282, 745);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 6;
             pictureBox1.TabStop = false;
@@ -114,10 +121,10 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Tan;
-            ClientSize = new Size(1002, 589);
+            ClientSize = new Size(1058, 664);
             Controls.Add(label3);
             Controls.Add(button1);
             Controls.Add(textBox2);
@@ -125,7 +132,9 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
+            Margin = new Padding(4, 4, 4, 4);
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

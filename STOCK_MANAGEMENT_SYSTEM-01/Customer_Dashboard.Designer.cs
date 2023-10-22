@@ -43,9 +43,10 @@
             // 
             button1.BackColor = Color.LightSalmon;
             button1.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(696, 143);
+            button1.Location = new Point(870, 179);
+            button1.Margin = new Padding(4, 4, 4, 4);
             button1.Name = "button1";
-            button1.Size = new Size(170, 42);
+            button1.Size = new Size(212, 52);
             button1.TabIndex = 0;
             button1.Text = "Transactions";
             button1.UseVisualStyleBackColor = false;
@@ -55,9 +56,10 @@
             // 
             button2.BackColor = Color.LightSalmon;
             button2.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.Location = new Point(29, 91);
+            button2.Location = new Point(36, 114);
+            button2.Margin = new Padding(4, 4, 4, 4);
             button2.Name = "button2";
-            button2.Size = new Size(172, 35);
+            button2.Size = new Size(215, 44);
             button2.TabIndex = 1;
             button2.Text = "view products";
             button2.UseVisualStyleBackColor = false;
@@ -67,11 +69,12 @@
             // 
             dataGridView1.BackgroundColor = Color.Bisque;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(29, 143);
+            dataGridView1.Location = new Point(36, 179);
+            dataGridView1.Margin = new Padding(4, 4, 4, 4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(630, 418);
+            dataGridView1.Size = new Size(788, 522);
             dataGridView1.TabIndex = 3;
             // 
             // label1
@@ -80,16 +83,18 @@
             label1.BackColor = Color.Tan;
             label1.Font = new Font("Cambria", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.Firebrick;
-            label1.Location = new Point(306, 27);
+            label1.Location = new Point(382, 34);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(435, 43);
+            label1.Size = new Size(526, 53);
             label1.TabIndex = 4;
             label1.Text = "CUSTOMER DASHBOARD";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources._8;
-            pictureBox1.Location = new Point(-7, -2);
+            pictureBox1.Location = new Point(-9, -2);
+            pictureBox1.Margin = new Padding(4, 4, 4, 4);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(546, 626);
             pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -99,24 +104,27 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources._8;
-            pictureBox2.Location = new Point(537, -2);
+            pictureBox2.Location = new Point(671, -2);
+            pictureBox2.Margin = new Padding(4, 4, 4, 4);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(465, 590);
+            pictureBox2.Size = new Size(581, 738);
             pictureBox2.TabIndex = 6;
             pictureBox2.TabStop = false;
             // 
             // Customer_Dashboard
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1002, 589);
+            ClientSize = new Size(1058, 664);
             Controls.Add(label1);
             Controls.Add(dataGridView1);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(pictureBox1);
             Controls.Add(pictureBox2);
+            Margin = new Padding(4, 4, 4, 4);
             Name = "Customer_Dashboard";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Customer_Dashboard";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
