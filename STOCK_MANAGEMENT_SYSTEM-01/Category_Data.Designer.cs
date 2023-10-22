@@ -41,21 +41,19 @@
             button4 = new Button();
             label4 = new Label();
             pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.FromArgb(255, 192, 128);
-            label1.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Font = new Font("Cambria", 11F, FontStyle.Bold, GraphicsUnit.Point);
             label1.Location = new Point(13, 140);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(170, 33);
+            label1.Size = new Size(135, 26);
             label1.TabIndex = 0;
             label1.Text = "Category_ID";
             // 
@@ -63,11 +61,11 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.FromArgb(255, 192, 128);
-            label2.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(49, 198);
+            label2.Font = new Font("Cambria", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(13, 187);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(214, 33);
+            label2.Size = new Size(170, 26);
             label2.TabIndex = 1;
             label2.Text = "Category_Name";
             // 
@@ -75,18 +73,18 @@
             // 
             label3.AutoSize = true;
             label3.BackColor = Color.FromArgb(255, 192, 128);
-            label3.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(51, 265);
+            label3.Font = new Font("Cambria", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(16, 233);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(167, 33);
+            label3.Size = new Size(131, 26);
             label3.TabIndex = 2;
             label3.Text = "Description";
             // 
             // textBox2
             // 
             textBox2.BackColor = SystemColors.Info;
-            textBox2.Location = new Point(274, 201);
+            textBox2.Location = new Point(183, 187);
             textBox2.Margin = new Padding(4);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(188, 31);
@@ -97,7 +95,7 @@
             comboBox1.BackColor = SystemColors.Info;
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "category 01", "category 02", "category 03", "category 04" });
-            comboBox1.Location = new Point(274, 140);
+            comboBox1.Location = new Point(183, 140);
             comboBox1.Margin = new Padding(4);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(188, 33);
@@ -106,7 +104,7 @@
             // richTextBox1
             // 
             richTextBox1.BackColor = SystemColors.Info;
-            richTextBox1.Location = new Point(274, 269);
+            richTextBox1.Location = new Point(37, 263);
             richTextBox1.Margin = new Padding(4);
             richTextBox1.Name = "richTextBox1";
             richTextBox1.Size = new Size(314, 214);
@@ -128,9 +126,10 @@
             // 
             // button2
             // 
-            button2.BackColor = Color.Tomato;
+            button2.BackColor = Color.Teal;
             button2.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.Location = new Point(416, 581);
+            button2.ForeColor = SystemColors.ButtonHighlight;
+            button2.Location = new Point(243, 541);
             button2.Margin = new Padding(4);
             button2.Name = "button2";
             button2.Size = new Size(128, 46);
@@ -141,21 +140,21 @@
             // 
             // dataGridView1
             // 
-            dataGridView1.BackgroundColor = Color.Bisque;
+            dataGridView1.BackgroundColor = Color.LightGray;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(625, 140);
+            dataGridView1.Location = new Point(398, 100);
             dataGridView1.Margin = new Padding(4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(612, 551);
+            dataGridView1.Size = new Size(647, 551);
             dataGridView1.TabIndex = 9;
             // 
             // button3
             // 
             button3.BackColor = Color.Tomato;
             button3.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.Location = new Point(76, 581);
+            button3.Location = new Point(13, 23);
             button3.Margin = new Padding(4);
             button3.Name = "button3";
             button3.Size = new Size(115, 46);
@@ -166,9 +165,10 @@
             // 
             // button4
             // 
-            button4.BackColor = Color.Tomato;
+            button4.BackColor = Color.Teal;
             button4.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button4.Location = new Point(226, 581);
+            button4.ForeColor = SystemColors.ButtonHighlight;
+            button4.Location = new Point(13, 541);
             button4.Margin = new Padding(4);
             button4.Name = "button4";
             button4.Size = new Size(145, 46);
@@ -180,10 +180,10 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.BackColor = Color.Tan;
+            label4.BackColor = Color.Transparent;
             label4.Font = new Font("Cambria", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.ForeColor = Color.Firebrick;
-            label4.Location = new Point(436, 29);
+            label4.ForeColor = Color.Black;
+            label4.Location = new Point(537, 23);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
             label4.Size = new Size(362, 53);
@@ -196,21 +196,11 @@
             pictureBox1.Location = new Point(0, -2);
             pictureBox1.Margin = new Padding(4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(715, 740);
+            pictureBox1.Size = new Size(390, 740);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 13;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = Properties.Resources._8;
-            pictureBox2.Location = new Point(714, -2);
-            pictureBox2.Margin = new Padding(4);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(539, 740);
-            pictureBox2.TabIndex = 14;
-            pictureBox2.TabStop = false;
             // 
             // Category_Data
             // 
@@ -230,7 +220,6 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
-            Controls.Add(pictureBox2);
             Margin = new Padding(4);
             Name = "Category_Data";
             StartPosition = FormStartPosition.CenterScreen;
@@ -238,7 +227,6 @@
             Load += Category_Data_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -258,6 +246,5 @@
         private Button button4;
         private Label label4;
         private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
     }
 }

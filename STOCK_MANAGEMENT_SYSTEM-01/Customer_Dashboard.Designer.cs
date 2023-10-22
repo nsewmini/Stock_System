@@ -32,18 +32,17 @@
             button2 = new Button();
             dataGridView1 = new DataGridView();
             label1 = new Label();
-            pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.BackColor = Color.LightSalmon;
+            button1.BackColor = Color.Teal;
             button1.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(870, 179);
+            button1.ForeColor = SystemColors.ButtonHighlight;
+            button1.Location = new Point(40, 95);
             button1.Margin = new Padding(4);
             button1.Name = "button1";
             button1.Size = new Size(212, 52);
@@ -54,12 +53,13 @@
             // 
             // button2
             // 
-            button2.BackColor = Color.LightSalmon;
+            button2.BackColor = Color.Teal;
             button2.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.Location = new Point(36, 114);
+            button2.ForeColor = SystemColors.ButtonHighlight;
+            button2.Location = new Point(830, 95);
             button2.Margin = new Padding(4);
             button2.Name = "button2";
-            button2.Size = new Size(215, 44);
+            button2.Size = new Size(215, 52);
             button2.TabIndex = 1;
             button2.Text = "view products";
             button2.UseVisualStyleBackColor = false;
@@ -67,48 +67,37 @@
             // 
             // dataGridView1
             // 
-            dataGridView1.BackgroundColor = Color.Bisque;
+            dataGridView1.BackgroundColor = Color.LightGray;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(36, 179);
+            dataGridView1.Location = new Point(40, 155);
             dataGridView1.Margin = new Padding(4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(788, 522);
+            dataGridView1.Size = new Size(1005, 482);
             dataGridView1.TabIndex = 3;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = Color.Tan;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Cambria", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.Firebrick;
-            label1.Location = new Point(382, 34);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(277, -2);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(526, 53);
             label1.TabIndex = 4;
             label1.Text = "CUSTOMER DASHBOARD";
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources._8;
-            pictureBox1.Location = new Point(-9, -2);
-            pictureBox1.Margin = new Padding(4);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(546, 626);
-            pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox1.TabIndex = 5;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
-            // 
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources._8;
-            pictureBox2.Location = new Point(671, -2);
+            pictureBox2.Location = new Point(-17, 308);
             pictureBox2.Margin = new Padding(4);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(581, 738);
+            pictureBox2.Size = new Size(1082, 369);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 6;
             pictureBox2.TabStop = false;
             // 
@@ -121,14 +110,12 @@
             Controls.Add(dataGridView1);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(pictureBox1);
             Controls.Add(pictureBox2);
             Margin = new Padding(4);
             Name = "Customer_Dashboard";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Customer_Dashboard";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -140,7 +127,6 @@
         private Button button2;
         private DataGridView dataGridView1;
         private Label label1;
-        private PictureBox pictureBox1;
         private PictureBox pictureBox2;
     }
 }
