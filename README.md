@@ -21,7 +21,7 @@ The Hardware Stock Management System is a comprehensive solution for tracking an
 - Microsoft SQL Server
 ![image](https://github.com/nsewmini/Stock_System/assets/96427674/54e0c410-db96-46bd-95ec-afc0e818ecca)
 
-- Visual Studio (for development)
+- Visual Studio
 - .NET Framework
   
 ![image](https://github.com/nsewmini/Stock_System/assets/96427674/8fd8beb6-255e-4f25-92c6-2f1d3468d63e)
